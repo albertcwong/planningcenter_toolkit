@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "planningcenter-toolkit"
+version = "0.1.0"
+description = ""
+authors = ["Albert Wong <albwong@netflix.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+requests = "^2.32.3"
+click = "^8.1.8"
+pyyaml = "^6.0.2"
+
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "planningcenter-toolkit"
+version = "0.1.0"
+description = "A CLI tool for interacting with the Planning Center API"
+dependencies = ["click", "requests", "pyyaml"]
+
+[tool.poetry.scripts]
+pc = "planningcenter_toolkit.cli:cli"
