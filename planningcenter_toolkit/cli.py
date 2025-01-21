@@ -404,7 +404,6 @@ def clear():
 )
 @click.option(
     "--team-position-name",
-    default="English Worship Greeter",
     help="Name of team position to clear."
 )
 def team_position(config, service_type_name, team_position_name):
